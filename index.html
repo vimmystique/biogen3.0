@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/biogen.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+		
+		<div data-role="page" id="home" data-dom-cache="true" >
+			<div data-role="header"  data-theme="a" data-position="inline">
+			<a data-icon="plus" class="ui-alt-icon " >HELP</a>	
+			<h1>BIOGEN 3.0</h1>
+			<a href="#about">ABOUT</a>
+			</div> 
+			<div>
+					<div class="m-center">
+							<!-- <div class="intro"> -->
+							<img id="logo" src="assets/img/biogen.png">
+							<h2>BIOS PASSWORD REMOVER</h2>
+					</div>
+					<div  id="control_id"> <form name="pwgen" id="form_id"><input type="text" name="serial"  id="serial_id" placeholder="Enter code here!"/><br /><br />
+					<input type="submit" class="ui-alt-icon ui-nodisc-icon"   name="serial" id="button_id" data-icon="lock"  value="UNLOCK"> </form> </div>
+					<div id="results" class="w3-container w3-padding">
+
+							<h4 style="display: none; " id="try_this"><br />CODES GENERATED (site will be available until 30 march 19) !!!</h4><div id="answer"></div>
+								<div id="dell_note" style="text-align: left;  display: none;"> <span class="label notice" style="text-align: left;" id="dell_note">Remember! Some Dell/HP require Right Ctrl+Enter to validate passcode, others use Left Ctrl+Enter. Also best to use trusted external keyboard. @vim-2019</span>
+							</div>	
+				</div>
+		</div>	
+		
+		<div data-role="page" id="about" >
+				<div data-role="header"  data-theme="a" data-position="inline">
+				<a data-icon="home" class="ui-alt-icon ui-nodisc-icon" data-prefetch="true" href="#home">HOME</a>		
+				<h1>BIOGEN 3.0</h1>
+				<a data-icon="back" class="ui-alt-icon ui-nodisc-icon">HELP</a>
+				</div>
+				<div><h4>this is about page</h4></div> 
+			</div>
+			<script type="text/javascript" src="assets/js/bundle.053e49206c2c32c3168e.js"></script>		
+</body>
+</html>
