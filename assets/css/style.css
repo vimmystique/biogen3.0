@@ -9,30 +9,8 @@
     margin: auto;
     text-align: center;
 }
-/* 
-
-#control_id{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-#serial_id{
-    width: 80%;
-    color: white;
+.panel{
     padding: 10px;
-}
-
-
-#results{
-    display: block;
-    color: white;
-    font-size: 120%;
-    padding: 20px
-}
-p{
-    color: white;
-    margin: 0px;
-
 }
 th{
     background-color: white;
@@ -42,9 +20,16 @@ td{
     border: solid 0.5px white;
 }
 ul,li{
-    background-color: white;
+    background-color:black;
     padding: 10px;
     list-style: none;
-} */
+}
+#table{
+    color: orange;
+}
+td{
+    background-color:black;
+}
+
 
 
