@@ -254,4 +254,8 @@ table{
 #navbar{
 display:none;	
 }
+	td{  
+    border: none;
+    padding: 0px;
+}
 }
