@@ -191,7 +191,7 @@ footer p{
     bottom: -20px;
 }
 table{
-	    padding: 20px 10px;
+	padding: 20px 10px;
     margin: 10px auto;
     box-shadow: 0px 0px 4px black;
     user-select: text;
@@ -260,4 +260,7 @@ display:none;
     border: none;
     padding: 0px;
 }
+	table{
+		display:content;
+	}
 }
