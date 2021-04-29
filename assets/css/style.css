@@ -22,6 +22,7 @@ body{
     align-items: center;
     text-align: center;
 	box-shadow: 0px 0px 2px black;
+		position:fixed;
 }
 
 #titleIcon{
@@ -89,10 +90,11 @@ body{
 .panel{
          background-color: yellowgreen;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 45px;
     padding: 0px 0px 20px;
     display: flex;
     flex-direction: column;
+
 }
 .panelWrap{
         max-width: 700px;
