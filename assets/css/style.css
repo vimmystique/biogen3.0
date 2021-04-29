@@ -1,35 +1,257 @@
-#logo{
-    width:200px;
-    display: block;
-    margin: auto;
-    padding: 5px;
+
+body{
+    width: 100%;
+    margin: 0px;
+	font-family: monospace;
+	user-select:none;
 }
-.m-center{
-    display: block;
-    margin: auto;
+*{
+	margin:0px;
+	box-sizing:content-box;
+	padding:0px;
+}
+.hide{
+	display:none !important;
+}
+#title{
+    background-color: yellowgreen;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
     text-align: center;
+	box-shadow: 0px 0px 2px black;
+}
+
+#titleIcon{
+    height:30px;
+	margin:0px 10px;
+   
+}
+.error{
+        color: white;
+    font-size: 24px;
+    margin: 0px auto;
+    background: red;
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 9px;
+}
+.good{
+     color: yellowgreen;
+    font-size: 24px;
+    margin: 0px auto;
+    background: white;
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 9px;
+}
+.button{
+        text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: #000;
+    text-align: center;
+    width: 60px;
+    border: 1px solid lightgrey;
+    margin: 1px;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+	cursor:pointer;
+/*    border-top: 0.5px solid black;*/
+}
+.active{
+    background-color: white !important;
+    color: black;
+}
+.adBtn{
+	    padding: 8px;
+    background: orangered;
+    margin: 5px;
+    color: white;
+    /* border: 1px solid; */
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px black;
+	cursor:pointer;
+}
+.adBtn:active{
+	background:black;
+}
+
+#navbar{
+      display: flex;
+    margin: auto;
+    width: fit-content;
 }
 .panel{
+         background-color: yellowgreen;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.panelWrap{
+        max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.intro{
+    background-color: white;
     padding: 10px;
+}
+#logo{
+        width: 100px;
+    margin: 20px;
+}
+#control_id{
+       width: 80%;
+    display: block;
+    margin: auto;
+}
+#serial_id{
+        margin-top: 10px;
+    width: 200px;
+    font-size: 20px;
+    /* color: white; */
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+#button_id{
+        width: 100px;
+    background-color: white;
+    border-style: none;
+    /* font-size: 120%; */
+    padding: 10px;
+	box-shadow: 0px 0px 2px;
+}
+#button_id:active{   
+    background-color: black;
+    color: white;
+}
+form{
+	padding:20px;
+}
+#results{
+    color: white;
+    font-size: 120%;
+    padding: 20px;
+    background: seagreen;
+    width: 80%;
+	max-width:800px;
+    margin: 20px auto;
+
+}
+p{
+    margin: 5px;
+    line-height: 1.5;
+
 }
 th{
     background-color: white;
 }
 td{
- color:white;
+     color: black;
     border: solid 0.5px white;
+    background: white;
+    padding: 5px;
 }
 ul,li{
-    background-color:black;
+    background-color: white;
     padding: 10px;
     list-style: none;
 }
-#table{
-    color: orange;
+
+footer{
+      padding: 5px;
+    background-color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    bottom: -121px;
+    z-index: -1;
+    
 }
-td{
-    background-color:black;
+footer p{
+	font-family: system-ui;
+	
 }
-
-
-
+.footImg{
+	    width: 100%;
+    position: relative;
+    bottom: -20px;
+}
+table{
+	    padding: 20px 10px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 4px black;
+    user-select: text;
+} 
+.mobMenuWrapper{
+	 display:none;
+}
+.mobMenuCnt{
+	background: yellowgreen;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+	box-shadow: 1px 1px 5px black;
+	transition-duration: 0.5s;
+	
+}
+.shifty{
+	transform: translateX(310px);
+}
+#answer{
+	    text-align: left;
+}
+.close{
+	    font-size: 25px;
+    background: black;
+    padding: 0px 8px;
+    border-radius: 50%;
+    position: relative;
+    right: -125px;
+    top: 5px;
+    margin: 5px;
+    margin: 5px;
+}
+.mobMenuBtnCnt{
+	     background: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+.mobMenuBtn{
+	    background: none;
+    margin: 1px 0px;
+    border-bottom: 1px solid black;
+    /* width: 80%; */
+    margin: 1px auto;
+}
+@media screen and (max-width: 600px){
+    .button{
+        width: auto;    
+    }
+	.mobMenuWrapper{
+	display:block;
+    margin: auto 10px auto auto;
+    color: white;
+	}
+    #serial_id{
+    height: auto;
+    width: 100%;
+    padding: 2px
+}
+#navbar{
+display:none;	
+}
+}
